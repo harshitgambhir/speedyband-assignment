@@ -7,7 +7,6 @@ import {
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuSeparator,
-  DropdownMenuShortcut,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
@@ -34,30 +33,14 @@ export function ProfileDropdown() {
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
           <DropdownMenuItem asChild>
-            <a href="/">
-              Profile
-              <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
-            </a>
+            <a href="/">Profile</a>
           </DropdownMenuItem>
           <DropdownMenuItem asChild>
-            <a href="/">
-              Billing
-              <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
-            </a>
+            <a href="/">Settings</a>
           </DropdownMenuItem>
-          <DropdownMenuItem asChild>
-            <a href="/">
-              Settings
-              <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
-            </a>
-          </DropdownMenuItem>
-          <DropdownMenuItem>New Team</DropdownMenuItem>
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
-        <DropdownMenuItem>
-          Log out
-          <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
-        </DropdownMenuItem>
+        <DropdownMenuItem>Log out</DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );
