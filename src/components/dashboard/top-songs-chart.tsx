@@ -1,5 +1,12 @@
 import { useQuery } from "@tanstack/react-query";
-import { Bar, BarChart, CartesianGrid, LabelList, XAxis } from "recharts";
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  LabelList,
+  XAxis,
+  YAxis,
+} from "recharts";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   type ChartConfig,
@@ -59,21 +66,16 @@ const TopSongsChart: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
                 tickMargin={10}
                 axisLine={false}
               />
+              <YAxis tickMargin={10} tickLine={false} axisLine={false} />
               <ChartTooltip
                 cursor={false}
                 content={<ChartTooltipContent hideLabel />}
               />
-              <Bar dataKey="streams" fill="var(--color-streams)" radius={8}>
-                <LabelList
-                  position="top"
-                  offset={12}
-                  className="fill-foreground"
-                  fontSize={12}
-                  formatter={(value: keyof typeof chartConfig) =>
-                    value.toLocaleString()
-                  }
-                />
-              </Bar>
+              <Bar
+                dataKey="streams"
+                fill="var(--color-streams)"
+                radius={8}
+              ></Bar>
             </BarChart>
           </ChartContainer>
         </ResponsiveContainer>
