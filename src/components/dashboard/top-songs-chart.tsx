@@ -69,6 +69,9 @@ const TopSongsChart: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
                   offset={12}
                   className="fill-foreground"
                   fontSize={12}
+                  formatter={(value: keyof typeof chartConfig) =>
+                    value.toLocaleString()
+                  }
                 />
               </Bar>
             </BarChart>
