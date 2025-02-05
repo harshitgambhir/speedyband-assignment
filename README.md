@@ -25,13 +25,13 @@
 Clone the project
 
 ```bash
-  git clone https://github.com/harshitgambhir/speedyband-assignment.git
+  git clone https://github.com/harshitgambhir/speedybrand-assignment.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd speedyband-assignment
+  cd speedybrand-assignment
 ```
 
 Install dependencies
